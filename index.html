@@ -158,89 +158,111 @@
   </div>
 </section>
 
-
 <!-- Skills Section -->
 <section id="skills" class="py-20 bg-gray-900 relative overflow-hidden">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-16 fade-in gradient-text">My Technical Skills</h2>
 
-    <!-- Skills Container -->
-    <div id="skills-cloud" class="relative w-full h-[500px]">
-      <!-- Each skill is a floating span -->
-      <span class="skill absolute text-blue-400 font-semibold text-lg">Linux</span>
-      <span class="skill absolute text-purple-400 font-semibold text-lg">TCP/IP</span>
-      <span class="skill absolute text-green-400 font-semibold text-lg">DNS</span>
-      <span class="skill absolute text-yellow-400 font-semibold text-lg">Subnets</span>
-      <span class="skill absolute text-red-400 font-semibold text-lg">VLANs</span>
-      <span class="skill absolute text-orange-400 font-semibold text-lg">Routing</span>
-      <span class="skill absolute text-cyan-400 font-semibold text-lg">NAT</span>
-      <span class="skill absolute text-pink-400 font-semibold text-lg">Load Balancers</span>
-      <span class="skill absolute text-blue-300 font-semibold text-lg">Firewall</span>
-      <span class="skill absolute text-green-300 font-semibold text-lg">VirtualBox</span>
-      <span class="skill absolute text-purple-300 font-semibold text-lg">Git</span>
-      <span class="skill absolute text-yellow-300 font-semibold text-lg">GitHub</span>
-      <span class="skill absolute text-red-300 font-semibold text-lg">Maven</span>
-      <span class="skill absolute text-orange-300 font-semibold text-lg">NPM</span>
-      <span class="skill absolute text-cyan-300 font-semibold text-lg">Jenkins</span>
-      <span class="skill absolute text-pink-300 font-semibold text-lg">ArgoCD</span>
-      <span class="skill absolute text-blue-500 font-semibold text-lg">Docker</span>
-      <span class="skill absolute text-green-500 font-semibold text-lg">Docker Compose</span>
-      <span class="skill absolute text-purple-500 font-semibold text-lg">DockerHub</span>
-      <span class="skill absolute text-yellow-500 font-semibold text-lg">Kubernetes</span>
-      <span class="skill absolute text-red-500 font-semibold text-lg">Helm</span>
-      <span class="skill absolute text-orange-500 font-semibold text-lg">Terraform</span>
-      <span class="skill absolute text-cyan-500 font-semibold text-lg">AWS IAM</span>
-      <span class="skill absolute text-pink-500 font-semibold text-lg">EC2</span>
-      <span class="skill absolute text-blue-400 font-semibold text-lg">S3</span>
-      <span class="skill absolute text-green-400 font-semibold text-lg">EBS</span>
-      <span class="skill absolute text-purple-400 font-semibold text-lg">RDS</span>
-      <span class="skill absolute text-yellow-400 font-semibold text-lg">ECR</span>
-      <span class="skill absolute text-red-400 font-semibold text-lg">EKS</span>
-      <span class="skill absolute text-orange-400 font-semibold text-lg">SonarQube</span>
-      <span class="skill absolute text-cyan-400 font-semibold text-lg">Nexus</span>
+    <!-- Skills Spheres Container -->
+    <div class="flex flex-wrap justify-center gap-20">
+      
+      <!-- Networking Sphere -->
+      <div class="relative w-80 h-80">
+        <div class="absolute inset-0 rounded-full border-2 border-blue-500"></div>
+        <span class="skill absolute text-blue-400 font-semibold">TCP/IP</span>
+        <span class="skill absolute text-blue-300 font-semibold">DNS</span>
+        <span class="skill absolute text-green-400 font-semibold">Subnets</span>
+        <span class="skill absolute text-yellow-400 font-semibold">VLANs</span>
+        <span class="skill absolute text-red-400 font-semibold">Routing</span>
+        <span class="skill absolute text-orange-400 font-semibold">NAT</span>
+        <span class="skill absolute text-pink-400 font-semibold">Load Balancers</span>
+        <span class="skill absolute text-cyan-400 font-semibold">Firewall</span>
+      </div>
+
+      <!-- Cloud & Containers Sphere -->
+      <div class="relative w-80 h-80">
+        <div class="absolute inset-0 rounded-full border-2 border-cyan-400"></div>
+        <span class="skill absolute text-blue-400 font-semibold">Docker</span>
+        <span class="skill absolute text-blue-300 font-semibold">Docker Compose</span>
+        <span class="skill absolute text-purple-400 font-semibold">DockerHub</span>
+        <span class="skill absolute text-green-400 font-semibold">Kubernetes</span>
+        <span class="skill absolute text-green-300 font-semibold">Helm</span>
+        <span class="skill absolute text-orange-400 font-semibold">Terraform</span>
+        <span class="skill absolute text-yellow-400 font-semibold">AWS IAM</span>
+        <span class="skill absolute text-yellow-300 font-semibold">EC2</span>
+        <span class="skill absolute text-pink-400 font-semibold">S3</span>
+      </div>
+
+      <!-- CI/CD & Tools Sphere -->
+      <div class="relative w-80 h-80">
+        <div class="absolute inset-0 rounded-full border-2 border-yellow-400"></div>
+        <span class="skill absolute text-red-400 font-semibold">Jenkins</span>
+        <span class="skill absolute text-orange-400 font-semibold">ArgoCD</span>
+        <span class="skill absolute text-blue-400 font-semibold">Maven</span>
+        <span class="skill absolute text-gray-400 font-semibold">NPM</span>
+        <span class="skill absolute text-purple-400 font-semibold">Git</span>
+        <span class="skill absolute text-gray-300 font-semibold">GitHub</span>
+        <span class="skill absolute text-red-300 font-semibold">SonarQube</span>
+        <span class="skill absolute text-gray-500 font-semibold">Nexus</span>
+      </div>
+
     </div>
   </div>
 </section>
 
 <script>
-  const skills = document.querySelectorAll('#skills-cloud .skill');
-
-  // Random initial position
-  skills.forEach(skill => {
-    skill.style.left = Math.random() * 90 + '%';
-    skill.style.top = Math.random() * 90 + '%';
-  });
-
-  // Move skills slightly on mouse move
-  document.getElementById('skills-cloud').addEventListener('mousemove', e => {
-    const centerX = e.target.offsetWidth / 2;
-    const centerY = e.target.offsetHeight / 2;
-    const offsetX = (e.clientX - centerX) / 30;
-    const offsetY = (e.clientY - centerY) / 30;
-
+  // Arrange skills around a circle
+  function arrangeCircle(container) {
+    const skills = container.querySelectorAll('.skill');
+    const radius = container.offsetWidth / 2 - 30;
+    const angleStep = (2 * Math.PI) / skills.length;
+    
     skills.forEach((skill, index) => {
-      const baseX = parseFloat(skill.dataset.baseX || skill.offsetLeft);
-      const baseY = parseFloat(skill.dataset.baseY || skill.offsetTop);
-      skill.dataset.baseX = baseX;
-      skill.dataset.baseY = baseY;
+      const angle = index * angleStep;
+      const x = radius * Math.cos(angle) + radius;
+      const y = radius * Math.sin(angle) + radius;
+      skill.style.left = `${x}px`;
+      skill.style.top = `${y}px`;
+      skill.style.transform = 'translate(-50%, -50%)';
+      skill.style.transition = 'transform 0.3s ease';
+    });
+  }
 
-      skill.style.transform = `translate(${offsetX * (index % 5)}px, ${offsetY * (index % 5)}px)`;
+  document.querySelectorAll('.relative').forEach(container => arrangeCircle(container));
+
+  // Add mouse movement rotation
+  document.addEventListener('mousemove', e => {
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+    const offsetX = (e.clientX - centerX) / 100;
+    const offsetY = (e.clientY - centerY) / 100;
+
+    document.querySelectorAll('.relative').forEach(container => {
+      container.style.transform = `rotateX(${offsetY}deg) rotateY(${offsetX}deg)`;
+      container.style.transition = 'transform 0.1s';
     });
   });
 </script>
 
 <style>
   .skill {
-    transition: transform 0.2s ease, color 0.3s ease;
-    cursor: default;
+    position: absolute;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
   }
   .skill:hover {
-    transform: scale(1.3) !important;
+    transform: scale(1.4) !important;
     color: #ffffff;
-    text-shadow: 0 0 10px #ffffff, 0 0 20px currentColor;
+    text-shadow: 0 0 10px #fff, 0 0 20px currentColor;
     z-index: 50;
   }
 </style>
+
 
 
 
