@@ -95,9 +95,26 @@
 <header class="min-h-screen flex items-center justify-center gradient-bg pt-16 mobile-padding">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center fade-in">
     <!-- Profile Picture -->
-    <div class="w-40 h-40 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-[3px] shadow-2xl">
-      <img src="./images/me.jpeg" alt="Ahmed Ben Sassi" class="w-full h-full object-cover rounded-full border-4 border-gray-800" />
+    <div class="relative w-44 h-44 mx-auto mb-8">
+      <!-- Rotating shimmer -->
+      <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-spin-slow blur-2xl opacity-50"></div>
+    
+      <!-- Main photo with border -->
+      <div class="relative w-full h-full rounded-full p-[4px] bg-gray-800 shadow-2xl transition-transform duration-500 hover:scale-105">
+        <img src="./images/me.jpeg" alt="Ahmed Ben Sassi" class="w-full h-full object-cover rounded-full border-4 border-gray-800 transition-transform duration-500 hover:scale-105" />
+      </div>
     </div>
+    
+    <style>
+    /* Custom slow spin animation */
+    @keyframes spin-slow {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+      animation: spin-slow 20s linear infinite;
+    }
+    </style>
     
     
     <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 gradient-text">BEN SASSI Ahmed</h1>
