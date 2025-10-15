@@ -441,9 +441,9 @@ window.addEventListener('load', () => {
             <span class="text-red-400">🚩 Challenge:</span>
           </h4>
           <p class="text-gray-400">
-            Automate the build and deployment process of a Java Spring Boot application 
-            while maintaining consistent version control, Docker image tagging, and seamless 
-            Kubernetes deployment — ensuring a true end-to-end CI/CD workflow.
+            Create a fully automated CI/CD pipeline for a <span class="text-blue-300 font-semibold">Java Spring Boot</span> 
+            app while avoiding infinite build loops caused by Jenkins commits, ensuring version control consistency, 
+            and automatically tagging each release. The goal was to eliminate all manual steps from build to deployment.
           </p>
         </div>
 
@@ -453,12 +453,12 @@ window.addEventListener('load', () => {
             <span class="text-green-400">💡 Solution:</span>
           </h4>
           <p class="text-gray-400">
-            Implemented a Declarative <strong>Jenkins pipeline</strong> that automates every stage:
-            compiling Java code with <strong>Maven</strong>, building and pushing Docker images to 
-            <strong>Docker Hub</strong>, and deploying updates automatically to a 
-            <strong>Kubernetes cluster</strong>.  
-            The pipeline dynamically updates versions in <code>pom.xml</code> and manifests to 
-            eliminate manual intervention.
+            Built a <strong>Declarative Jenkins Pipeline</strong> that performs a full CI/CD workflow:  
+            verifies the committer to <strong>prevent Jenkins-triggered loops</strong>, 
+            <strong>auto-increments the version</strong> in <code>pom.xml</code>, 
+            builds the project using <strong>Maven</strong>, 
+            and automatically builds & pushes the <strong>Docker image</strong> to Docker Hub.  
+            Finally, it deploys the new version to <strong>Kubernetes</strong> seamlessly.
           </p>
         </div>
 
@@ -468,9 +468,9 @@ window.addEventListener('load', () => {
             <span class="text-yellow-400">🎯 Impact:</span>
           </h4>
           <p class="text-gray-400">
-            Reduced deployment time dramatically while improving delivery consistency.  
-            Demonstrated real-world <strong>DevOps automation</strong> for containerized Java 
-            microservices — ensuring faster releases, reproducibility, and scalability.
+            The pipeline achieved <strong>zero manual intervention</strong> with safe, loop-free deployments.  
+            It improved reliability, accelerated delivery speed, and demonstrated best practices in 
+            <strong>CI/CD automation</strong> and <strong>pipeline logic control</strong>.
           </p>
         </div>
       </div>
@@ -510,6 +510,7 @@ window.addEventListener('load', () => {
 
   </div>
 </article>
+
 
 
       <!-- Network Monitoring System -->
