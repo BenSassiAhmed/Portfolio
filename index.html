@@ -150,7 +150,7 @@ function typeHTML(html) {
       result += html[i];
       typingElement.innerHTML = result;
       i++;
-      setTimeout(typeChar, 25); // typing speed
+      setTimeout(typeChar, 12); // typing speed
     }
   }
 
@@ -420,90 +420,94 @@ window.addEventListener('load', () => {
   </div>
 </article>
 
-<!-- Java Maven App — Automated CI/CD Pipeline with Jenkins, Docker & Kubernetes -->
+
+
+<!-- Java Maven App — CI/CD Pipeline with Jenkins, Docker & Kubernetes -->
 <article class="bg-gray-700/50 rounded-2xl p-6 md:p-8 mb-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
   <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-start">
+
     <div class="lg:w-2/3">
       <div class="flex items-center gap-3 mb-4">
         <div class="text-2xl">☕</div>
-        <h3 class="text-2xl font-bold text-blue-400">
+        <h3 class="text-2xl font-bold text-yellow-400">
           Java Maven App — CI/CD Pipeline with Jenkins, Docker & Kubernetes
         </h3>
       </div>
 
       <div class="space-y-4 mb-6">
-        <!-- Overview -->
+        <!-- Challenge -->
         <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
           <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
-            <span class="text-yellow-400">🌟 Overview:</span>
+            <span class="text-red-400">🚩 Challenge:</span>
           </h4>
           <p class="text-gray-400">
-            A <span class="text-blue-300 font-semibold">Spring Boot web application</span> built with Maven, 
-            fully <span class="text-green-300 font-semibold">Dockerized</span> and deployed to 
-            <span class="text-purple-300 font-semibold">Kubernetes</span> using a complete 
-            <span class="text-pink-300 font-semibold">CI/CD pipeline</span> managed by Jenkins. 
-            Demonstrates automated build, versioning, and deployment of Java microservices.
+            Automate the build and deployment process of a Java Spring Boot application 
+            while maintaining consistent version control, Docker image tagging, and seamless 
+            Kubernetes deployment — ensuring a true end-to-end CI/CD workflow.
           </p>
         </div>
 
-        <!-- Features -->
+        <!-- Solution -->
         <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
           <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
-            <span class="text-green-400">🔧 Features:</span>
+            <span class="text-green-400">💡 Solution:</span>
           </h4>
-          <ul class="list-disc list-inside text-gray-400 space-y-1">
-            <li><span class="text-blue-300 font-semibold">Spring Boot:</span> Serves a static welcome page.</li>
-            <li><span class="text-blue-300 font-semibold">Maven Build:</span> Handles dependency management and JAR packaging.</li>
-            <li><span class="text-green-300 font-semibold">Dockerized:</span> Uses <code>openjdk:8-jre-alpine</code> for lightweight containerization.</li>
-            <li><span class="text-yellow-300 font-semibold">CI/CD:</span> Jenkins pipeline automates build, tagging, push, and deployment.</li>
-            <li><span class="text-purple-300 font-semibold">Kubernetes Deployment:</span> <code>deployementservice.yml</code> manages rollout and exposure.</li>
-          </ul>
+          <p class="text-gray-400">
+            Implemented a Declarative <strong>Jenkins pipeline</strong> that automates every stage:
+            compiling Java code with <strong>Maven</strong>, building and pushing Docker images to 
+            <strong>Docker Hub</strong>, and deploying updates automatically to a 
+            <strong>Kubernetes cluster</strong>.  
+            The pipeline dynamically updates versions in <code>pom.xml</code> and manifests to 
+            eliminate manual intervention.
+          </p>
         </div>
 
-        <!-- CI/CD Workflow -->
+        <!-- Impact -->
         <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
           <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
-            <span class="text-red-400">🚀 CI/CD Workflow:</span>
+            <span class="text-yellow-400">🎯 Impact:</span>
           </h4>
-          <ol class="list-decimal list-inside text-gray-400 space-y-1">
-            <li>👨‍💻 Verify committer to avoid CI/CD loops.</li>
-            <li>🔢 Auto-increment version in <code>pom.xml</code>.</li>
-            <li>🛠️ Build and package the app using <code>mvn package</code>.</li>
-            <li>🐳 Build and push Docker image (<code>bensassiahmed/project989</code>).</li>
-            <li>📄 Update Kubernetes manifest with new tag.</li>
-            <li>🚀 Deploy to cluster via <code>kubectl apply</code>.</li>
-            <li>💾 Commit updated version back to GitHub.</li>
-          </ol>
+          <p class="text-gray-400">
+            Reduced deployment time dramatically while improving delivery consistency.  
+            Demonstrated real-world <strong>DevOps automation</strong> for containerized Java 
+            microservices — ensuring faster releases, reproducibility, and scalability.
+          </p>
         </div>
       </div>
 
-      <!-- Tags -->
+      <!-- Tech Stack -->
       <div class="flex flex-wrap gap-2 mb-6">
-        <span class="bg-yellow-900/50 text-yellow-200 px-3 py-2 rounded-full text-sm font-medium border border-yellow-700">Java</span>
-        <span class="bg-blue-900/50 text-blue-200 px-3 py-2 rounded-full text-sm font-medium border border-blue-700">Maven</span>
-        <span class="bg-green-900/50 text-green-200 px-3 py-2 rounded-full text-sm font-medium border border-green-700">Docker</span>
-        <span class="bg-purple-900/50 text-purple-200 px-3 py-2 rounded-full text-sm font-medium border border-purple-700">Kubernetes</span>
-        <span class="bg-red-900/50 text-red-200 px-3 py-2 rounded-full text-sm font-medium border border-red-700">Jenkins</span>
-        <span class="bg-gray-600 text-gray-200 px-3 py-2 rounded-full text-sm font-medium border border-gray-500">CI/CD</span>
+        <span class="bg-blue-900/50 text-blue-200 px-3 py-2 rounded-full text-sm font-medium border border-blue-700">Java</span>
+        <span class="bg-green-900/50 text-green-200 px-3 py-2 rounded-full text-sm font-medium border border-green-700">Spring Boot</span>
+        <span class="bg-purple-900/50 text-purple-200 px-3 py-2 rounded-full text-sm font-medium border border-purple-700">Maven</span>
+        <span class="bg-yellow-900/50 text-yellow-200 px-3 py-2 rounded-full text-sm font-medium border border-yellow-700">Jenkins</span>
+        <span class="bg-blue-800/50 text-blue-100 px-3 py-2 rounded-full text-sm font-medium border border-blue-600">Docker</span>
+        <span class="bg-red-900/50 text-red-200 px-3 py-2 rounded-full text-sm font-medium border border-red-700">Kubernetes</span>
+        <span class="bg-gray-700/50 text-gray-200 px-3 py-2 rounded-full text-sm font-medium border border-gray-600">CI/CD</span>
+        <span class="bg-pink-900/50 text-pink-200 px-3 py-2 rounded-full text-sm font-medium border border-pink-700">GitHub</span>
       </div>
 
       <!-- Links -->
       <div class="flex flex-wrap gap-3">
-        <a href="https://github.com/BenSassiAhmed/java-maven-app" 
+        <a href="https://github.com/BenSassiAhmed/java-maven-app" target="_blank"
            class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg font-medium btn-hover flex items-center gap-2 shadow-lg">
           <span>📁</span> GitHub Repository
+        </a>
+        <a href="https://hub.docker.com/r/bensassiahmed/project989" target="_blank"
+           class="bg-gray-600 hover:bg-gray-700 text-white px-5 py-3 rounded-lg font-medium btn-hover flex items-center gap-2">
+          <span>🐳</span> Docker Hub Image
         </a>
       </div>
     </div>
 
-    <!-- Image -->
+    <!-- Project Image / Screenshot -->
     <div class="lg:w-1/3 w-full">
       <div class="bg-gray-600 rounded-xl w-full aspect-video flex items-center justify-center overflow-hidden border-2 border-gray-500 shadow-lg">
-        <img src="images/java-maven-app.png" 
-             alt="Java Maven App CI/CD Pipeline - Jenkins and Kubernetes Deployment" 
+        <img src="images/java-maven-app.gif" alt="Java Maven App Screenshot"
              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
       </div>
     </div>
+
   </div>
 </article>
 
