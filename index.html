@@ -160,79 +160,98 @@
 
 
 <!-- Skills Section -->
-<section id="skills" class="py-20 bg-gray-900 mobile-padding">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6">
-    <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in gradient-text">My Technical Skills</h2>
+<section id="skills" class="py-20 bg-gray-900 relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-16 fade-in gradient-text">My Technical Skills</h2>
 
-    <!-- Skills Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- Skill Card Template -->
-      <div class="group relative bg-gray-800 rounded-3xl p-8 text-center border border-gray-700 overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 ease-in-out">
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-20 blur-3xl scale-75 group-hover:scale-100 transition-transform duration-700"></div>
-        <div class="relative z-10">
-          <div class="text-4xl mb-4 animate-bounce">🖥️</div>
-          <h3 class="text-xl font-semibold mb-6 text-blue-400">Operating Systems & Networking</h3>
-          <div class="flex flex-wrap justify-center gap-2">
-            <span class="bg-blue-700/30 rounded-full px-3 py-1 text-sm border border-blue-600">Linux</span>
-            <span class="bg-purple-700/30 rounded-full px-3 py-1 text-sm border border-purple-600">TCP/IP</span>
-            <span class="bg-purple-600/30 rounded-full px-3 py-1 text-sm border border-purple-500">DNS</span>
-            <span class="bg-green-600/30 rounded-full px-3 py-1 text-sm border border-green-500">Subnets & VLANs</span>
-            <span class="bg-orange-600/30 rounded-full px-3 py-1 text-sm border border-orange-500">Routing & NAT</span>
-            <span class="bg-red-600/30 rounded-full px-3 py-1 text-sm border border-red-500">Load Balancers & Firewall</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="group relative bg-gray-800 rounded-3xl p-8 text-center border border-gray-700 overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 ease-in-out">
-        <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-yellow-400 opacity-20 blur-3xl scale-75 group-hover:scale-100 transition-transform duration-700"></div>
-        <div class="relative z-10">
-          <div class="text-4xl mb-4 animate-bounce">🖱️</div>
-          <h3 class="text-xl font-semibold mb-6 text-green-400">Virtualization & Version Control</h3>
-          <div class="flex flex-wrap justify-center gap-2">
-            <span class="bg-blue-600/30 rounded-full px-3 py-1 text-sm border border-blue-500">VirtualBox</span>
-            <span class="bg-gray-700/30 rounded-full px-3 py-1 text-sm border border-gray-600">Git</span>
-            <span class="bg-gray-700/30 rounded-full px-3 py-1 text-sm border border-gray-600">GitHub</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="group relative bg-gray-800 rounded-3xl p-8 text-center border border-gray-700 overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 ease-in-out">
-        <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-red-400 opacity-20 blur-3xl scale-75 group-hover:scale-100 transition-transform duration-700"></div>
-        <div class="relative z-10">
-          <div class="text-4xl mb-4 animate-bounce">⚙️</div>
-          <h3 class="text-xl font-semibold mb-6 text-yellow-400">CI/CD & Build Tools</h3>
-          <div class="flex flex-wrap justify-center gap-2">
-            <span class="bg-red-600/30 rounded-full px-3 py-1 text-sm border border-red-500">Jenkins</span>
-            <span class="bg-orange-600/30 rounded-full px-3 py-1 text-sm border border-orange-500">ArgoCD</span>
-            <span class="bg-blue-700/30 rounded-full px-3 py-1 text-sm border border-blue-600">Maven</span>
-            <span class="bg-gray-700/30 rounded-full px-3 py-1 text-sm border border-gray-600">NPM</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="group relative bg-gray-800 rounded-3xl p-8 text-center border border-gray-700 overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 ease-in-out">
-        <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-20 blur-3xl scale-75 group-hover:scale-100 transition-transform duration-700"></div>
-        <div class="relative z-10">
-          <div class="text-4xl mb-4 animate-bounce">☁️</div>
-          <h3 class="text-xl font-semibold mb-6 text-cyan-400">Containers, Orchestration & Cloud</h3>
-          <div class="flex flex-wrap justify-center gap-2">
-            <span class="bg-blue-600/30 rounded-full px-3 py-1 text-sm border border-blue-500">Docker</span>
-            <span class="bg-blue-700/30 rounded-full px-3 py-1 text-sm border border-blue-600">Docker Compose</span>
-            <span class="bg-purple-600/30 rounded-full px-3 py-1 text-sm border border-purple-500">DockerHub</span>
-            <span class="bg-green-600/30 rounded-full px-3 py-1 text-sm border border-green-500">Kubernetes</span>
-            <span class="bg-green-700/30 rounded-full px-3 py-1 text-sm border border-green-600">Helm</span>
-            <span class="bg-orange-500/30 rounded-full px-3 py-1 text-sm border border-orange-400">Terraform</span>
-            <span class="bg-yellow-600/30 rounded-full px-3 py-1 text-sm border border-yellow-500">AWS IAM, EC2, S3, EBS, RDS, ECR, EKS</span>
-            <span class="bg-red-500/30 rounded-full px-3 py-1 text-sm border border-red-400">SonarQube</span>
-            <span class="bg-gray-700/30 rounded-full px-3 py-1 text-sm border border-gray-600">Nexus</span>
-          </div>
-        </div>
-      </div>
-
+    <!-- Skills Container -->
+    <div id="skills-cloud" class="relative w-full h-[500px]">
+      <!-- Each skill is a floating span -->
+      <span class="skill absolute text-blue-400 font-semibold text-lg">Linux</span>
+      <span class="skill absolute text-purple-400 font-semibold text-lg">TCP/IP</span>
+      <span class="skill absolute text-green-400 font-semibold text-lg">DNS</span>
+      <span class="skill absolute text-yellow-400 font-semibold text-lg">Subnets</span>
+      <span class="skill absolute text-red-400 font-semibold text-lg">VLANs</span>
+      <span class="skill absolute text-orange-400 font-semibold text-lg">Routing</span>
+      <span class="skill absolute text-cyan-400 font-semibold text-lg">NAT</span>
+      <span class="skill absolute text-pink-400 font-semibold text-lg">Load Balancers</span>
+      <span class="skill absolute text-blue-300 font-semibold text-lg">Firewall</span>
+      <span class="skill absolute text-green-300 font-semibold text-lg">VirtualBox</span>
+      <span class="skill absolute text-purple-300 font-semibold text-lg">Git</span>
+      <span class="skill absolute text-yellow-300 font-semibold text-lg">GitHub</span>
+      <span class="skill absolute text-red-300 font-semibold text-lg">Maven</span>
+      <span class="skill absolute text-orange-300 font-semibold text-lg">NPM</span>
+      <span class="skill absolute text-cyan-300 font-semibold text-lg">Jenkins</span>
+      <span class="skill absolute text-pink-300 font-semibold text-lg">ArgoCD</span>
+      <span class="skill absolute text-blue-500 font-semibold text-lg">Docker</span>
+      <span class="skill absolute text-green-500 font-semibold text-lg">Docker Compose</span>
+      <span class="skill absolute text-purple-500 font-semibold text-lg">DockerHub</span>
+      <span class="skill absolute text-yellow-500 font-semibold text-lg">Kubernetes</span>
+      <span class="skill absolute text-red-500 font-semibold text-lg">Helm</span>
+      <span class="skill absolute text-orange-500 font-semibold text-lg">Terraform</span>
+      <span class="skill absolute text-cyan-500 font-semibold text-lg">AWS IAM</span>
+      <span class="skill absolute text-pink-500 font-semibold text-lg">EC2</span>
+      <span class="skill absolute text-blue-400 font-semibold text-lg">S3</span>
+      <span class="skill absolute text-green-400 font-semibold text-lg">EBS</span>
+      <span class="skill absolute text-purple-400 font-semibold text-lg">RDS</span>
+      <span class="skill absolute text-yellow-400 font-semibold text-lg">ECR</span>
+      <span class="skill absolute text-red-400 font-semibold text-lg">EKS</span>
+      <span class="skill absolute text-orange-400 font-semibold text-lg">SonarQube</span>
+      <span class="skill absolute text-cyan-400 font-semibold text-lg">Nexus</span>
     </div>
   </div>
 </section>
+
+<script>
+  const skills = document.querySelectorAll('#skills-cloud .skill');
+
+  // Random initial position
+  skills.forEach(skill => {
+    skill.style.left = Math.random() * 90 + '%';
+    skill.style.top = Math.random() * 90 + '%';
+  });
+
+  // Move skills slightly on mouse move
+  document.getElementById('skills-cloud').addEventListener('mousemove', e => {
+    const centerX = e.target.offsetWidth / 2;
+    const centerY = e.target.offsetHeight / 2;
+    const offsetX = (e.clientX - centerX) / 30;
+    const offsetY = (e.clientY - centerY) / 30;
+
+    skills.forEach((skill, index) => {
+      const baseX = parseFloat(skill.dataset.baseX || skill.offsetLeft);
+      const baseY = parseFloat(skill.dataset.baseY || skill.offsetTop);
+      skill.dataset.baseX = baseX;
+      skill.dataset.baseY = baseY;
+
+      skill.style.transform = `translate(${offsetX * (index % 5)}px, ${offsetY * (index % 5)}px)`;
+    });
+  });
+</script>
+
+<style>
+  .skill {
+    transition: transform 0.2s ease, color 0.3s ease;
+    cursor: default;
+  }
+  .skill:hover {
+    transform: scale(1.3) !important;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px currentColor;
+    z-index: 50;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
