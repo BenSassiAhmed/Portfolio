@@ -121,13 +121,31 @@
     <p class="text-xl md:text-2xl text-blue-200 mb-6 font-medium">DevOps & Cloud Enthusiast</p>
 
     <!-- TL;DR Line -->
+    
     <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-12 italic">
-      Designing <span class="text-blue-400 font-semibold">scalable</span>, <span class="text-purple-400 font-semibold">reliable</span> 
-      <span class="text-green-400 font-semibold">cloud solutions</span> with 
-      <span class="text-orange-400 font-semibold">DevOps automation</span>, 
-      <span class="text-yellow-400 font-semibold">Kubernetes orchestration</span>, and 
-      <span class="text-cyan-400 font-semibold">end-to-end CI/CD pipelines</span>.
+      Designing 
+      <span class="highlight">scalable</span>, 
+      <span class="highlight">reliable</span> 
+      <span class="highlight">cloud solutions</span> with 
+      <span class="highlight">DevOps automation</span>, 
+      <span class="highlight">Kubernetes orchestration</span>, and 
+      <span class="highlight">end-to-end CI/CD pipelines</span>.
     </p>
+    
+    <style>
+    .highlight {
+      color: #38bdf8; /* default color (blue) */
+      font-weight: 600;
+      transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+      cursor: default;
+    }
+    .highlight:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+      color: #facc15; /* changes color to yellow on hover */
+    }
+    </style>
+    
     
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
