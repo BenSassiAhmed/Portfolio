@@ -158,14 +158,16 @@
   </div>
 </section>
 
+
+
 <!-- Skills Section -->
-<section id="skills" class="py-20 bg-gray-900 relative overflow-hidden h-[500px]">
+<section id="skills" class="py-20 bg-gray-900 relative">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-12 fade-in gradient-text">My Technical Skills</h2>
 
-    <!-- Skills container -->
-    <div id="skills-container" class="relative w-full h-[500px] overflow-hidden">
-      <!-- Skills as floating elements -->
+    <!-- Frame Container -->
+    <div id="skills-container" class="relative mx-auto w-full max-w-5xl h-[500px] border-4 border-blue-500 rounded-xl overflow-hidden bg-gray-800">
+      <!-- Skills -->
       <span class="skill text-blue-400 font-semibold">Linux</span>
       <span class="skill text-purple-400 font-semibold">TCP/IP</span>
       <span class="skill text-green-400 font-semibold">DNS</span>
@@ -206,12 +208,13 @@ const container = document.getElementById('skills-container');
 const skills = Array.from(container.querySelectorAll('.skill'));
 const containerRect = container.getBoundingClientRect();
 
+// Initialize skill positions and velocities
 skills.forEach(skill => {
   skill.style.position = 'absolute';
-  skill.style.left = Math.random() * (containerRect.width - 100) + 'px';
-  skill.style.top = Math.random() * (containerRect.height - 30) + 'px';
-  skill.dataset.vx = (Math.random() - 0.5) * 2; // horizontal speed
-  skill.dataset.vy = (Math.random() - 0.5) * 2; // vertical speed
+  skill.style.left = Math.random() * (container.clientWidth - 100) + 'px';
+  skill.style.top = Math.random() * (container.clientHeight - 30) + 'px';
+  skill.dataset.vx = (Math.random() * 2 + 1) * (Math.random() < 0.5 ? 1 : -1);
+  skill.dataset.vy = (Math.random() * 2 + 1) * (Math.random() < 0.5 ? 1 : -1);
 });
 
 function detectCollision(a, b) {
@@ -224,23 +227,30 @@ function detectCollision(a, b) {
 }
 
 function animateSkills() {
+  const width = container.clientWidth;
+  const height = container.clientHeight;
+
   skills.forEach((skill, i) => {
     let x = parseFloat(skill.style.left);
     let y = parseFloat(skill.style.top);
     let vx = parseFloat(skill.dataset.vx);
     let vy = parseFloat(skill.dataset.vy);
-    const width = skill.offsetWidth;
-    const height = skill.offsetHeight;
+    const sw = skill.offsetWidth;
+    const sh = skill.offsetHeight;
 
-    // Bounce off walls
-    if (x + width >= containerRect.width || x <= 0) skill.dataset.vx = -vx;
-    if (y + height >= containerRect.height || y <= 0) skill.dataset.vy = -vy;
+    // Bounce off container walls
+    if (x + sw >= width || x <= 0) skill.dataset.vx = -vx;
+    if (y + sh >= height || y <= 0) skill.dataset.vy = -vy;
 
-    // Collision with other skills
-    for (let j = 0; j < skills.length; j++) {
-      if (i !== j && detectCollision(skill, skills[j])) {
+    // Bounce off other skills
+    for (let j = i + 1; j < skills.length; j++) {
+      if (detectCollision(skill, skills[j])) {
         skill.dataset.vx = -vx;
         skill.dataset.vy = -vy;
+        let otherVx = parseFloat(skills[j].dataset.vx);
+        let otherVy = parseFloat(skills[j].dataset.vy);
+        skills[j].dataset.vx = -otherVx;
+        skills[j].dataset.vy = -otherVy;
       }
     }
 
@@ -257,13 +267,14 @@ animateSkills();
 
 <style>
 .skill {
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 9999px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.1);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255,255,255,0.2);
   transition: transform 0.2s ease, color 0.3s ease, text-shadow 0.3s ease;
   cursor: default;
+  font-size: 1rem;
 }
 .skill:hover {
   transform: scale(1.5) !important;
@@ -272,6 +283,7 @@ animateSkills();
   z-index: 50;
 }
 </style>
+
 
 
 
