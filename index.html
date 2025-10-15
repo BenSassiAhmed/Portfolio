@@ -92,7 +92,7 @@
   </nav>
 
 <!-- Hero Section -->
-<header class="min-h-screen flex flex-col items-center justify-center gradient-bg pt-16 mobile-padding">
+<header class="min-h-screen flex flex-col items-center justify-center gradient-bg-old pt-16 mobile-padding">
   <!-- Profile Picture with Rotating Shimmer -->
   <div class="relative w-48 h-48 mx-auto mb-8">
     <!-- Outer rotating shimmer -->
@@ -109,7 +109,7 @@
   <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-4 gradient-text animate-fade-in">BEN SASSI Ahmed</h1>
   <p class="text-2xl md:text-3xl text-blue-200 mb-8 font-medium animate-fade-in-delay">DevOps & Cloud Enthusiast</p>
 
-  <!-- Intro / TLDR with typing effect -->
+  <!-- TLDR / Typing Animation -->
   <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-12 italic">
     <span id="typing-text" class="font-semibold"></span>
     <span class="border-r-2 border-gray-300 animate-blink ml-1"></span>
@@ -127,13 +127,15 @@
 </header>
 
 <script>
-// Text to type with HTML spans for colored highlights
+// Typing animation with colored HTML spans
 const text = `
 Designing <span class="text-blue-400">scalable</span>, 
 <span class="text-purple-400">reliable</span> 
 <span class="text-green-400">cloud solutions</span> with 
 <span class="text-orange-400">automation</span> and 
-<span class="text-yellow-400">Kubernetes orchestration</span>.
+<span class="text-yellow-400">Kubernetes orchestration</span>
+<span class="text-yellow-400">using CI/CD pipelines.</span>.
+
 `;
 
 const typingElement = document.getElementById("typing-text");
@@ -161,11 +163,13 @@ window.addEventListener('load', () => {
 </script>
 
 <style>
-/* Slow spin shimmer */
-@keyframes spin-slow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+/* Original hero gradient background */
+.gradient-bg-old {
+  background: linear-gradient(135deg, #1f2937, #111827);
 }
+
+/* Slow spin shimmer */
+@keyframes spin-slow { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 .animate-spin-slow { animation: spin-slow 25s linear infinite; }
 
 /* Fade-in animations */
@@ -184,6 +188,7 @@ window.addEventListener('load', () => {
   -webkit-text-fill-color: transparent;
 }
 </style>
+
 
 <!-- About Section -->
 <section id="about" class="py-20 bg-gray-800 mobile-padding">
