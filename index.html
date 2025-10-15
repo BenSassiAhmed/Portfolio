@@ -161,113 +161,106 @@
 
 
 <!-- Skills Section -->
-<section id="skills" class="py-20 bg-gray-900 relative">
+<section id="skills" class="py-20 bg-gray-900 mobile-padding">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-12 fade-in gradient-text">My Technical Skills</h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-16 fade-in gradient-text">Technical Skills</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Operating Systems & Virtualization -->
+      <div class="fade-in card-hover">
+        <div class="bg-gray-800 rounded-2xl p-6 text-center h-full border border-gray-700">
+          <div class="text-3xl mb-4">💻</div>
+          <h3 class="text-xl font-semibold mb-4 text-blue-400">OS & Virtualization</h3>
+          <div class="space-y-2">
+            <div class="skill bg-blue-900/30 rounded-xl p-3 text-sm border border-blue-800/50">Linux</div>
+            <div class="skill bg-purple-900/30 rounded-xl p-3 text-sm border border-purple-800/50">VirtualBox</div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Frame Container -->
-    <div id="skills-container" class="relative mx-auto w-full max-w-5xl h-[500px] border-4 border-blue-500 rounded-xl overflow-hidden bg-gray-800">
-      <!-- Skills -->
-      <span class="skill text-blue-400 font-semibold">Linux</span>
-      <span class="skill text-blue-300 font-semibold">Networking</span>
-      <span class="skill text-green-300 font-semibold">VirtualBox</span>
-      <span class="skill text-purple-300 font-semibold">Git</span>
-      <span class="skill text-gray-400 font-semibold">GitHub</span>
-      <span class="skill text-red-300 font-semibold">Maven</span>
-      <span class="skill text-orange-300 font-semibold">NPM</span>
-      <span class="skill text-cyan-300 font-semibold">Jenkins</span>
-      <span class="skill text-pink-300 font-semibold">ArgoCD</span>
-      <span class="skill text-blue-500 font-semibold">Docker</span>
-      <span class="skill text-yellow-500 font-semibold">Kubernetes</span>
-      <span class="skill text-red-500 font-semibold">Helm</span>
-      <span class="skill text-orange-500 font-semibold">Terraform</span>
-      <span class="skill text-cyan-500 font-semibold">AWS </span>
-      <span class="skill text-orange-400 font-semibold">SonarQube</span>
-      <span class="skill text-cyan-400 font-semibold">Nexus</span>
+      <!-- Networking -->
+      <div class="fade-in card-hover">
+        <div class="bg-gray-800 rounded-2xl p-6 text-center h-full border border-gray-700">
+          <div class="text-3xl mb-4">🌐</div>
+          <h3 class="text-xl font-semibold mb-4 text-green-400">Networking</h3>
+          <div class="space-y-2">
+            <div class="skill bg-green-600/30 rounded-xl p-3 text-sm border border-green-500/50">TCP/IP</div>
+            <div class="skill bg-green-700/30 rounded-xl p-3 text-sm border border-green-600/50">DNS</div>
+            <div class="skill bg-green-500/30 rounded-xl p-3 text-sm border border-green-400/50">Subnets</div>
+            <div class="skill bg-yellow-600/30 rounded-xl p-3 text-sm border border-yellow-500/50">Routing</div>
+            <div class="skill bg-orange-500/30 rounded-xl p-3 text-sm border border-orange-400/50">VLANs</div>
+            <div class="skill bg-red-500/30 rounded-xl p-3 text-sm border border-red-400/50">NAT</div>
+            <div class="skill bg-purple-500/30 rounded-xl p-3 text-sm border border-purple-400/50">Firewall</div>
+            <div class="skill bg-cyan-500/30 rounded-xl p-3 text-sm border border-cyan-400/50">Load Balancers</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CI/CD & Automation -->
+      <div class="fade-in card-hover">
+        <div class="bg-gray-800 rounded-2xl p-6 text-center h-full border border-gray-700">
+          <div class="text-3xl mb-4">⚙️</div>
+          <h3 class="text-xl font-semibold mb-4 text-orange-400">CI/CD & Automation</h3>
+          <div class="space-y-2">
+            <div class="skill bg-red-600/30 rounded-xl p-3 text-sm border border-red-500/50">Jenkins</div>
+            <div class="skill bg-orange-600/30 rounded-xl p-3 text-sm border border-orange-500/50">ArgoCD</div>
+            <div class="skill bg-gray-700/30 rounded-xl p-3 text-sm border border-gray-600">Git & GitHub</div>
+            <div class="skill bg-yellow-600/30 rounded-xl p-3 text-sm border border-yellow-500/50">Bash Scripting</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud & Containers -->
+      <div class="fade-in card-hover">
+        <div class="bg-gray-800 rounded-2xl p-6 text-center h-full border border-gray-700">
+          <div class="text-3xl mb-4">☁️</div>
+          <h3 class="text-xl font-semibold mb-4 text-cyan-400">Cloud & Containers</h3>
+          <div class="space-y-2">
+            <div class="skill bg-blue-600/30 rounded-xl p-3 text-sm border border-blue-500/50">Docker</div>
+            <div class="skill bg-green-700/30 rounded-xl p-3 text-sm border border-green-600/50">Docker Compose</div>
+            <div class="skill bg-purple-600/30 rounded-xl p-3 text-sm border border-purple-500/50">DockerHub</div>
+            <div class="skill bg-yellow-600/30 rounded-xl p-3 text-sm border border-yellow-500/50">Kubernetes</div>
+            <div class="skill bg-red-600/30 rounded-xl p-3 text-sm border border-red-500/50">Helm</div>
+            <div class="skill bg-orange-600/30 rounded-xl p-3 text-sm border border-orange-500/50">Terraform</div>
+            <div class="skill bg-cyan-600/30 rounded-xl p-3 text-sm border border-cyan-500/50">AWS</div>
+            <div class="skill bg-purple-700/30 rounded-xl p-3 text-sm border border-purple-600/50">EC2, S3, RDS, EKS, ECR, IAM</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Code Quality & Artifacts -->
+      <div class="fade-in card-hover col-span-1 sm:col-span-2 lg:col-span-4">
+        <div class="bg-gray-800 rounded-2xl p-6 text-center h-full border border-gray-700">
+          <div class="text-3xl mb-4">📦</div>
+          <h3 class="text-xl font-semibold mb-4 text-pink-400">Code Quality & Artifact Management</h3>
+          <div class="flex flex-wrap justify-center gap-4">
+            <div class="skill bg-red-500/30 rounded-xl p-3 text-sm border border-red-400/50">SonarQube</div>
+            <div class="skill bg-purple-500/30 rounded-xl p-3 text-sm border border-purple-400/50">Nexus</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<script>
-const container = document.getElementById('skills-container');
-const skills = Array.from(container.querySelectorAll('.skill'));
-const containerRect = container.getBoundingClientRect();
-
-// Initialize skill positions and velocities
-skills.forEach(skill => {
-  skill.style.position = 'absolute';
-  skill.style.left = Math.random() * (container.clientWidth - 100) + 'px';
-  skill.style.top = Math.random() * (container.clientHeight - 30) + 'px';
-  skill.dataset.vx = (Math.random() * 2 + 1) * (Math.random() < 0.5 ? 1 : -1);
-  skill.dataset.vy = (Math.random() * 2 + 1) * (Math.random() < 0.5 ? 1 : -1);
-});
-
-function detectCollision(a, b) {
-  const rectA = a.getBoundingClientRect();
-  const rectB = b.getBoundingClientRect();
-  return !(rectA.right < rectB.left || 
-           rectA.left > rectB.right || 
-           rectA.bottom < rectB.top || 
-           rectA.top > rectB.bottom);
-}
-
-function animateSkills() {
-  const width = container.clientWidth;
-  const height = container.clientHeight;
-
-  skills.forEach((skill, i) => {
-    let x = parseFloat(skill.style.left);
-    let y = parseFloat(skill.style.top);
-    let vx = parseFloat(skill.dataset.vx);
-    let vy = parseFloat(skill.dataset.vy);
-    const sw = skill.offsetWidth;
-    const sh = skill.offsetHeight;
-
-    // Bounce off container walls
-    if (x + sw >= width || x <= 0) skill.dataset.vx = -vx;
-    if (y + sh >= height || y <= 0) skill.dataset.vy = -vy;
-
-    // Bounce off other skills
-    for (let j = i + 1; j < skills.length; j++) {
-      if (detectCollision(skill, skills[j])) {
-        skill.dataset.vx = -vx;
-        skill.dataset.vy = -vy;
-        let otherVx = parseFloat(skills[j].dataset.vx);
-        let otherVy = parseFloat(skills[j].dataset.vy);
-        skills[j].dataset.vx = -otherVx;
-        skills[j].dataset.vy = -otherVy;
-      }
-    }
-
-    // Move skill
-    skill.style.left = x + parseFloat(skill.dataset.vx) + 'px';
-    skill.style.top = y + parseFloat(skill.dataset.vy) + 'px';
-  });
-
-  requestAnimationFrame(animateSkills);
-}
-
-animateSkills();
-</script>
-
 <style>
 .skill {
-  padding: 5px 12px;
-  border-radius: 9999px;
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255,255,255,0.2);
-  transition: transform 0.2s ease, color 0.3s ease, text-shadow 0.3s ease;
+  transition: transform 0.2s ease, color 0.3s ease;
   cursor: default;
-  font-size: 1rem;
 }
 .skill:hover {
-  transform: scale(1.5) !important;
-  color: #ffffff;
-  text-shadow: 0 0 10px #fff, 0 0 20px currentColor;
-  z-index: 50;
+  transform: scale(1.3);
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 15px currentColor;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  transition: transform 0.3s ease;
 }
 </style>
+
 
 
 
