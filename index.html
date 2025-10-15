@@ -332,61 +332,89 @@ window.addEventListener('load', () => {
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in gradient-text">Featured Projects</h2>
       
-      <!-- Cloud Security Lab -->
-      <article class="bg-gray-700/50 rounded-2xl p-6 md:p-8 mb-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
-        <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-start">
-          <div class="lg:w-2/3">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="text-2xl">🔒</div>
-              <h3 class="text-2xl font-bold text-blue-400">Cloud Security Lab – Azure IaaS</h3>
-            </div>
-            
-            <div class="space-y-4 mb-6">
-              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
-                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
-                  <span class="text-red-400">🚩 Challenge:</span>
-                </h4>
-                <p class="text-gray-400">Building a secure, automated cloud environment to demonstrate real-world attack detection and infrastructure automation while working within Azure Student subscription limitations and public IP restrictions.</p>
-              </div>
-              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
-                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
-                  <span class="text-green-400">💡 Solution:</span>
-                </h4>
-                <p class="text-gray-400">Created Infrastructure as Code with Terraform to deploy attacker/defender VMs in private network, implemented real-time network monitoring with Wireshark/tshark, automated security scanning with Nmap, and developed bootstrap scripts for automated tool installation.</p>
-              </div>
-              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
-                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
-                  <span class="text-yellow-400">🎯 Impact:</span>
-                </h4>
-                <p class="text-gray-400">Successfully detected port scanning attacks in real-time, demonstrated automated infrastructure deployment reducing setup time by 90%, created reusable security monitoring patterns, and documented complete DevOps workflow for future projects.</p>
-              </div>
-            </div>
-            
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span class="bg-blue-900/50 text-blue-200 px-3 py-2 rounded-full text-sm font-medium border border-blue-700">Terraform</span>
-              <span class="bg-green-900/50 text-green-200 px-3 py-2 rounded-full text-sm font-medium border border-green-700">Azure</span>
-              <span class="bg-purple-900/50 text-purple-200 px-3 py-2 rounded-full text-sm font-medium border border-purple-700">Wireshark</span>
-              <span class="bg-red-900/50 text-red-200 px-3 py-2 rounded-full text-sm font-medium border border-red-700">Nmap</span>
-              <span class="bg-gray-600 text-gray-200 px-3 py-2 rounded-full text-sm font-medium border border-gray-500">Linux</span>
-            </div>
-            
-            <div class="flex flex-wrap gap-3">
-              <a href="https://github.com/ridha-gn/cloud-security-lab" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg font-medium btn-hover flex items-center gap-2 shadow-lg">
-                <span>📁</span> GitHub Repository
-              </a>
-              <a href="https://youtu.be/y_o1BtTfkjs" class="bg-gray-600 hover:bg-gray-700 text-white px-5 py-3 rounded-lg font-medium btn-hover flex items-center gap-2">
-                <span>🎥</span> Demo Video
-              </a>
-            </div>
-          </div>
-          
-          <div class="lg:w-1/3 w-full">
-            <div class="bg-gray-600 rounded-xl w-full aspect-video flex items-center justify-center overflow-hidden border-2 border-gray-500 shadow-lg">
-              <img src="images/cloud-security-lab-screenshot.png" alt="Cloud Security Lab - Wireshark capture showing network traffic and attack detection" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-            </div>
-          </div>
+      <!-- DevOps & Cloud Solution — Automated CI/CD Pipeline with Scalable Kubernetes Infrastructure -->
+<article class="bg-gray-700/50 rounded-2xl p-6 md:p-8 mb-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
+  <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-start">
+
+    <div class="lg:w-2/3">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="text-2xl">🚀</div>
+        <h3 class="text-2xl font-bold text-blue-400">
+          DevOps & Cloud Solution — Automated CI/CD Pipeline with Scalable Kubernetes Infrastructure
+        </h3>
+      </div>
+
+      <div class="space-y-4 mb-6">
+        <!-- Challenge -->
+        <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+          <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+            <span class="text-red-400">🚩 Challenge:</span>
+          </h4>
+          <p class="text-gray-400">
+            Build a **secure, fully automated cloud infrastructure** with end-to-end CI/CD and scalable Kubernetes deployment, 
+            while demonstrating modern DevOps practices and integrating multiple AWS services.
+          </p>
         </div>
-      </article>
+
+        <!-- Solution -->
+        <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+          <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+            <span class="text-green-400">💡 Solution:</span>
+          </h4>
+          <p class="text-gray-400">
+            Designed a **highly available AWS architecture** with VPC, public and private subnets, and deployed Jenkins, SonarQube, Nexus for CI/CD. 
+            Built a **private Kubernetes cluster** with bastion host access, configured **Cluster Autoscaler (CA)**, HPA & VPA, 
+            integrated **GitOps with ArgoCD**, and implemented monitoring with **Prometheus & Grafana**.
+          </p>
+        </div>
+
+        <!-- Impact -->
+        <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+          <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+            <span class="text-yellow-400">🎯 Impact:</span>
+          </h4>
+          <p class="text-gray-400">
+            Delivered a **self-adaptive cloud system** that scales automatically based on traffic, improves cost-efficiency, 
+            ensures high availability, and provides full observability. Strengthened expertise in **IaC, GitOps, and end-to-end DevOps workflows**.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="bg-blue-900/50 text-blue-200 px-3 py-2 rounded-full text-sm font-medium border border-blue-700">AWS</span>
+        <span class="bg-green-900/50 text-green-200 px-3 py-2 rounded-full text-sm font-medium border border-green-700">Terraform</span>
+        <span class="bg-purple-900/50 text-purple-200 px-3 py-2 rounded-full text-sm font-medium border border-purple-700">Docker</span>
+        <span class="bg-red-900/50 text-red-200 px-3 py-2 rounded-full text-sm font-medium border border-red-700">Kubernetes</span>
+        <span class="bg-yellow-900/50 text-yellow-200 px-3 py-2 rounded-full text-sm font-medium border border-yellow-700">Jenkins</span>
+        <span class="bg-orange-900/50 text-orange-200 px-3 py-2 rounded-full text-sm font-medium border border-orange-700">SonarQube</span>
+        <span class="bg-cyan-900/50 text-cyan-200 px-3 py-2 rounded-full text-sm font-medium border border-cyan-700">Nexus</span>
+        <span class="bg-pink-900/50 text-pink-200 px-3 py-2 rounded-full text-sm font-medium border border-pink-700">ArgoCD</span>
+        <span class="bg-gray-600 text-gray-200 px-3 py-2 rounded-full text-sm font-medium border border-gray-500">Prometheus</span>
+        <span class="bg-gray-500 text-gray-100 px-3 py-2 rounded-full text-sm font-medium border border-gray-400">Grafana</span>
+      </div>
+
+      <!-- Links -->
+      <div class="flex flex-wrap gap-3">
+        <a href="https://github.com/BEN-SASSI-Ahmed/devops-cloud-project" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg font-medium btn-hover flex items-center gap-2 shadow-lg">
+          <span>📁</span> GitHub Repository
+        </a>
+        <a href="#" class="bg-gray-600 hover:bg-gray-700 text-white px-5 py-3 rounded-lg font-medium btn-hover flex items-center gap-2">
+          <span>🎥</span> Demo Video
+        </a>
+      </div>
+    </div>
+
+    <!-- Project Image / Screenshot -->
+    <div class="lg:w-1/3 w-full">
+      <div class="bg-gray-600 rounded-xl w-full aspect-video flex items-center justify-center overflow-hidden border-2 border-gray-500 shadow-lg">
+        <img src="images/devops-cloud-project.png" alt="DevOps & Cloud Project Screenshot" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+      </div>
+    </div>
+
+  </div>
+</article>
+
 
       <!-- FastAPI CI/CD Project -->
       <article class="bg-gray-700/50 rounded-2xl p-6 md:p-8 mb-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
